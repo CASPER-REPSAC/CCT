@@ -3,10 +3,10 @@ from PyQt5.QtWidgets import *
 from PyQt5 import uic
 import requests
 from urllib.request import urlopen
+from urllib.parse import urlparse, urljoin
 from bs4 import BeautifulSoup
 
 form_class = uic.loadUiType("cert_tool_ui.ui")[0]
-
 
 def crawling(URL):
     response = urlopen(URL)
@@ -22,22 +22,13 @@ def crawling(URL):
                     j = URL + j
                 if j != "#" or len(j) > 1 or URL not in j:
                     href_list.append(j)
-    href_list = re_crawling(list(set(href_list)))                
+    
+    link_list = []
+    for link in href_list:
+        if urlparse(link).netloc == urlparse(link).netloc:
+            link_list.append(link)
     return href_list
-
-def re_crawling(URL):
-    href_list = crawling(URL)
-    while 1:
-        len_list = len(href_list)
-        tmp_list = []
-        for i in href_list:
-            crawling_list = crawling(i)
-            tmp_list += crawling_list
-        href_list = list(set(href_list + tmp_list))
-        if len_list == len(href_list):
-            break
-    return href_list
-
+        
 
 def Check_input(URL):
     response = urlopen(URL)
