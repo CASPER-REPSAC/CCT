@@ -1,0 +1,18 @@
+gui Start
+[+]current crawling: http://localhost/tem/index.php
+[+]current crawling: http://localhost/login/login.php
+[+]current crawling: http://localhost/login/register.php
+[+]current crawling: http://localhost/tem/index.php
+[+]current crawling: https://html5up.net/
+[+]current crawling: https://www.changwon.ac.kr/portal/main.do
+[+]current crawling: https://ecampus.changwon.ac.kr/
+[+]current crawling: https://discord.gg/pBpuwsSN
+[+]current crawling: http://localhost/tem/index.php
+[+]current crawling: http://localhost/tem/index.php
+[+]current crawling: http://localhost/tem/index.php
+[+]current crawling: http://localhost/tem/index.php
+[+]current crawling: http://localhost/tem/index.php
+[+]current crawling: http://localhost/tem/index.php
+[+]current crawling: https://unsplash.com
+[+]current crawling: https://html5up.net
+[+]current crawling: http://localhost/board/freeboardwrite.php

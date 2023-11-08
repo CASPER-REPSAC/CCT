@@ -1,0 +1,2 @@
+[*] In input test start
+In input list : [None, 'http://localhost/tem/index.php', 'http://localhost/board/freeboardwrite.php']
